@@ -94,6 +94,7 @@ router.post("/login", async (req, res, next) => {
     };
 
     req.session.save(() => {
+      //Una vez inicia sesión le envíamos a Inicio
       res.redirect("/");
     });
   } catch (err) {
