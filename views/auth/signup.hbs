@@ -1,0 +1,15 @@
+<h2>Crea tu cuenta</h2>
+
+<form action="/auth/signup" method="POST">
+    <label for="username">Nombre de Usuario</label>
+    <input type="text" name="username">
+    <br>
+    <label for="password">Contraseña</label>
+    <input type="password" name="password">
+    <br>
+    {{errorMessage}}
+    <br>
+    <button>Crear Usuario</button>
+    
+
+</form>
